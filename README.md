@@ -12,34 +12,11 @@ The dashboard is designed for **non-technical stakeholders** such as teachers, s
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-📁 Student-Performance-PowerBI/
-│
-├── 📁 dataset/
-│   ├── StudentPerformanceFactors.csv          # Original dataset from Kaggle
-│   └── StudentPerformanceFactors_Clean.xlsx   # Cleaned dataset with added columns
-│
-├── 📁 report/
-│   └── Student_Performance_Project_Report.docx  # Full project report (CU format)
-│
-├── 📁 dashboard/
-│   └── StudentPerformance.pbix               # Power BI dashboard file
-│
-├── 📁 scripts/
-│   └── data_prep.py                          # Python preprocessing script
-│
-└── README.md
-```
-
----
-
 ## 📂 Dataset
 
 | Property | Details |
 |---|---|
-| **Source** | [Kaggle — Student Performance Factors](https://www.kaggle.com/) |
+| **Source** | [Kaggle — Student Performance Factors] |
 | **Records** | 6,607 students |
 | **Original Columns** | 20 attributes |
 | **Added Columns** | 4 (Pass_Fail, Score_Grade, Study_Category, Attendance_Category) |
@@ -74,19 +51,6 @@ The dashboard is designed for **non-technical stakeholders** such as teachers, s
 | **Python (pandas, openpyxl)** | Data cleaning & preprocessing |
 | **DAX (Data Analysis Expressions)** | Measures & calculated columns |
 | **Kaggle** | Dataset source |
-
----
-
-## ⚙️ Data Preprocessing
-
-Run the Python script to clean the dataset and add calculated columns before importing into Power BI:
-
-```bash
-pip install pandas openpyxl
-python scripts/data_prep.py
-```
-
-This generates `StudentPerformanceFactors_Clean.xlsx` in the `dataset/` folder with all four additional columns and formatted headers, ready for import into Power BI via **Home → Get Data → Excel Workbook**.
 
 ---
 
